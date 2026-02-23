@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "pnpm --filter flight-router-test dev",
+    "build:lib": "pnpm --filter flight-router build"
+  },
+  "packageManager": "pnpm@10.24.0"
+}
