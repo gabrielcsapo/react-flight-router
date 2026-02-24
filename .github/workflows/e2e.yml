@@ -1,0 +1,120 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  e2e-production:
+    name: Production E2E
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Playwright browsers
+        run: pnpm --filter flight-router-test exec playwright install --with-deps chromium
+
+      - name: Build library
+        run: pnpm build:lib
+
+      - name: Build test app
+        run: pnpm --filter flight-router-test build
+
+      - name: Start production server
+        run: node dist/server.js > /tmp/server.log 2>&1 &
+        working-directory: packages/flight-router-test
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null http://localhost:3000; then
+              echo "Server ready on port 3000"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "::error::Server failed to start within 30s"
+          cat /tmp/server.log
+          exit 1
+
+      - name: Run production E2E tests
+        run: pnpm --filter flight-router-test exec playwright test --project=production
+
+      - name: Print server log on failure
+        if: failure()
+        run: cat /tmp/server.log
+
+      - name: Upload test results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-test-results
+          path: packages/flight-router-test/test-results/
+          retention-days: 7
+
+  e2e-dev:
+    name: Dev E2E
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Playwright browsers
+        run: pnpm --filter flight-router-test exec playwright install --with-deps chromium
+
+      - name: Build library
+        run: pnpm build:lib
+
+      - name: Start dev server
+        run: pnpm dev > /tmp/dev-server.log 2>&1 &
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null http://localhost:5173; then
+              echo "Dev server ready on port 5173"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "::error::Dev server failed to start within 30s"
+          cat /tmp/dev-server.log
+          exit 1
+
+      - name: Run dev E2E tests
+        run: pnpm --filter flight-router-test exec playwright test --project=dev
+
+      - name: Print server log on failure
+        if: failure()
+        run: cat /tmp/dev-server.log
+
+      - name: Upload test results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dev-test-results
+          path: packages/flight-router-test/test-results/
+          retention-days: 7
