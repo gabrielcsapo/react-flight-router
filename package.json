@@ -1,9 +1,29 @@
 {
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "pnpm --filter flight-router-test dev",
-    "build:lib": "pnpm --filter flight-router build"
+    "build:lib": "pnpm --filter flight-router build",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "oxlint",
+      "oxfmt --check"
+    ],
+    "*.{json,jsonc,css,md,yaml,yml}": [
+      "oxfmt --check"
+    ]
   },
   "packageManager": "pnpm@10.24.0"
 }
