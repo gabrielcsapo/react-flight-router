@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter flight-router-test dev",
+    "dev": "pnpm --filter flight-router-example dev",
     "build:lib": "pnpm --filter flight-router build",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",

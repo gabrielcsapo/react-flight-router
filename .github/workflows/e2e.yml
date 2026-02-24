@@ -48,17 +48,17 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright browsers
-        run: pnpm --filter flight-router-test exec playwright install --with-deps chromium
+        run: pnpm --filter flight-router-example exec playwright install --with-deps chromium
 
       - name: Build library
         run: pnpm build:lib
 
       - name: Build test app
-        run: pnpm --filter flight-router-test build
+        run: pnpm --filter flight-router-example build
 
       - name: Start production server
         run: node dist/server.js > /tmp/server.log 2>&1 &
-        working-directory: packages/flight-router-test
+        working-directory: packages/flight-router-example
 
       - name: Wait for server
         run: |
@@ -74,7 +74,7 @@ jobs:
           exit 1
 
       - name: Run production E2E tests
-        run: pnpm --filter flight-router-test exec playwright test --project=production
+        run: pnpm --filter flight-router-example exec playwright test --project=production
 
       - name: Print server log on failure
         if: failure()
@@ -85,7 +85,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: production-test-results
-          path: packages/flight-router-test/test-results/
+          path: packages/flight-router-example/test-results/
           retention-days: 7
 
   e2e-dev:
@@ -106,7 +106,7 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright browsers
-        run: pnpm --filter flight-router-test exec playwright install --with-deps chromium
+        run: pnpm --filter flight-router-example exec playwright install --with-deps chromium
 
       - name: Build library
         run: pnpm build:lib
@@ -128,7 +128,7 @@ jobs:
           exit 1
 
       - name: Run dev E2E tests
-        run: pnpm --filter flight-router-test exec playwright test --project=dev
+        run: pnpm --filter flight-router-example exec playwright test --project=dev
 
       - name: Print server log on failure
         if: failure()
@@ -139,5 +139,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dev-test-results
-          path: packages/flight-router-test/test-results/
+          path: packages/flight-router-example/test-results/
           retention-days: 7
