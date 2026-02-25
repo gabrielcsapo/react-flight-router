@@ -53,6 +53,9 @@ jobs:
       - name: Build library
         run: pnpm build:lib
 
+      - name: Re-link bins after library build
+        run: pnpm install
+
       - name: Build test app
         run: pnpm --filter react-flight-router-example build
 
@@ -110,6 +113,9 @@ jobs:
 
       - name: Build library
         run: pnpm build:lib
+
+      - name: Re-link bins after library build
+        run: pnpm install
 
       - name: Build notes app
         run: pnpm --filter react-flight-router-notes-example build
