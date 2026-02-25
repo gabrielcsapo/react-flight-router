@@ -48,17 +48,17 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright browsers
-        run: pnpm --filter flight-router-example exec playwright install --with-deps chromium
+        run: pnpm --filter react-flight-router-example exec playwright install --with-deps chromium
 
       - name: Build library
         run: pnpm build:lib
 
       - name: Build test app
-        run: pnpm --filter flight-router-example build
+        run: pnpm --filter react-flight-router-example build
 
       - name: Start production server
         run: node dist/server.js > /tmp/server.log 2>&1 &
-        working-directory: packages/flight-router-example
+        working-directory: packages/react-flight-router-example
 
       - name: Wait for server
         run: |
@@ -74,7 +74,7 @@ jobs:
           exit 1
 
       - name: Run production E2E tests
-        run: pnpm --filter flight-router-example exec playwright test --project=production
+        run: pnpm --filter react-flight-router-example exec playwright test --project=production
 
       - name: Print server log on failure
         if: failure()
@@ -85,7 +85,65 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: production-test-results
-          path: packages/flight-router-example/test-results/
+          path: packages/react-flight-router-example/test-results/
+          retention-days: 7
+
+  e2e-production-notes:
+    name: Notes Example - Production E2E
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Playwright browsers
+        run: pnpm --filter react-flight-router-notes-example exec playwright install --with-deps chromium
+
+      - name: Build library
+        run: pnpm build:lib
+
+      - name: Build notes app
+        run: pnpm --filter react-flight-router-notes-example build
+
+      - name: Start production server
+        run: node dist/server.js > /tmp/notes-server.log 2>&1 &
+        working-directory: packages/react-flight-router-notes-example
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null http://localhost:3001; then
+              echo "Server ready on port 3001"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "::error::Server failed to start within 30s"
+          cat /tmp/notes-server.log
+          exit 1
+
+      - name: Run production E2E tests
+        run: pnpm --filter react-flight-router-notes-example exec playwright test --project=production
+
+      - name: Print server log on failure
+        if: failure()
+        run: cat /tmp/notes-server.log
+
+      - name: Upload test results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: notes-production-test-results
+          path: packages/react-flight-router-notes-example/test-results/
           retention-days: 7
 
   e2e-dev:
@@ -106,7 +164,7 @@ jobs:
         run: pnpm install
 
       - name: Install Playwright browsers
-        run: pnpm --filter flight-router-example exec playwright install --with-deps chromium
+        run: pnpm --filter react-flight-router-example exec playwright install --with-deps chromium
 
       - name: Build library
         run: pnpm build:lib
@@ -128,7 +186,7 @@ jobs:
           exit 1
 
       - name: Run dev E2E tests
-        run: pnpm --filter flight-router-example exec playwright test --project=dev
+        run: pnpm --filter react-flight-router-example exec playwright test --project=dev
 
       - name: Print server log on failure
         if: failure()
@@ -139,5 +197,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dev-test-results
-          path: packages/flight-router-example/test-results/
+          path: packages/react-flight-router-example/test-results/
           retention-days: 7
