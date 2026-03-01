@@ -152,6 +152,46 @@ jobs:
           path: packages/react-flight-router-notes-example/test-results/
           retention-days: 7
 
+  e2e-workers:
+    name: Workers E2E
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Playwright browsers
+        run: pnpm --filter react-flight-router-e2e exec playwright install --with-deps chromium
+
+      - name: Build library
+        run: pnpm build:lib
+
+      - name: Re-link bins after library build
+        run: pnpm install
+
+      - name: Build e2e app
+        run: pnpm --filter react-flight-router-e2e build
+
+      - name: Run worker E2E tests
+        run: pnpm --filter react-flight-router-e2e exec playwright test
+
+      - name: Upload test results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: workers-test-results
+          path: packages/react-flight-router-e2e/test-results/
+          retention-days: 7
+
   e2e-dev:
     name: Dev E2E
     runs-on: ubuntu-latest
