@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "pnpm --filter react-flight-router-example dev",
     "dev:notes": "pnpm --filter react-flight-router-notes-example dev",
+    "dev:e2e": "pnpm --filter react-flight-router-e2e dev",
+    "bench": "pnpm --filter react-flight-router-e2e bench",
     "build:lib": "pnpm --filter react-flight-router build",
     "docs:dev": "pnpm --filter react-flight-router-docs dev",
     "docs:build": "pnpm --filter react-flight-router-docs build",

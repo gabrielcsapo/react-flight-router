@@ -3,3 +3,4 @@ dist
 .vite
 *.tsbuildinfo
 test-results/
+packages/react-flight-router-e2e/benchmark-results/
