@@ -62,6 +62,8 @@ jobs:
       - name: Start production server
         run: node dist/server.js > /tmp/server.log 2>&1 &
         working-directory: packages/react-flight-router-example
+        env:
+          NODE_ENV: production
 
       - name: Wait for server
         run: |
@@ -123,6 +125,8 @@ jobs:
       - name: Start production server
         run: node dist/server.js > /tmp/notes-server.log 2>&1 &
         working-directory: packages/react-flight-router-notes-example
+        env:
+          NODE_ENV: production
 
       - name: Wait for server
         run: |
