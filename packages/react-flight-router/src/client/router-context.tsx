@@ -281,20 +281,30 @@ export function RouterProvider({
     return () => globalThis.removeEventListener("popstate", handler);
   }, [navigate]);
 
-  return (
-    <RouterContext.Provider
-      value={{
-        url,
-        navigate,
-        segments,
-        navigationState: pendingUrl != null ? "loading" : "idle",
-        params,
-        pendingUrl,
-        boundaryComponents,
-        navigationError,
-      }}
-    >
-      {children}
-    </RouterContext.Provider>
+  const navigationState: "idle" | "loading" = pendingUrl != null ? "loading" : "idle";
+
+  const contextValue = useMemo<RouterContextValue>(
+    () => ({
+      url,
+      navigate,
+      segments,
+      navigationState,
+      params,
+      pendingUrl,
+      boundaryComponents,
+      navigationError,
+    }),
+    [
+      url,
+      navigate,
+      segments,
+      navigationState,
+      params,
+      pendingUrl,
+      boundaryComponents,
+      navigationError,
+    ],
   );
+
+  return <RouterContext.Provider value={contextValue}>{children}</RouterContext.Provider>;
 }
