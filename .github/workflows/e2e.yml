@@ -28,7 +28,7 @@ jobs:
         run: pnpm lint
 
       - name: Check formatting
-        run: pnpm fmt:check
+        run: pnpm format:check
 
   e2e-production:
     name: Production E2E
