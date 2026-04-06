@@ -22,7 +22,7 @@ importers:
         version: 1.58.0
       vitest:
         specifier: ^4.1.2
-        version: 4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
 
   packages/docs:
     dependencies:
@@ -33,8 +33,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(rollup@4.59.0)
       fuse.js:
-        specifier: ^7.2.0
-        version: 7.2.0
+        specifier: ^7.3.0
+        version: 7.3.0
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -62,7 +62,7 @@ importers:
     devDependencies:
       '@tailwindcss/vite':
         specifier: ^4.2.2
-        version: 4.2.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.2.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       '@types/node':
         specifier: ^25.5.2
         version: 25.5.2
@@ -74,7 +74,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: ^6.0.1
-        version: 6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -94,17 +94,17 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vite:
-        specifier: ^8.0.3
-        version: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   packages/react-flight-router:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.12
-        version: 1.19.12(hono@4.12.10)
+        version: 1.19.12(hono@4.12.11)
       hono:
-        specifier: ^4.12.10
-        version: 4.12.10
+        specifier: ^4.12.11
+        version: 4.12.11
     devDependencies:
       '@testing-library/react':
         specifier: ^16.3.2
@@ -117,7 +117,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: ^6.0.1
-        version: 6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       happy-dom:
         specifier: ^20.8.9
         version: 20.8.9
@@ -134,20 +134,20 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vite:
-        specifier: ^8.0.3
-        version: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
       vitest:
         specifier: ^4.1.2
-        version: 4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
 
   packages/react-flight-router-e2e:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.12
-        version: 1.19.12(hono@4.12.10)
+        version: 1.19.12(hono@4.12.11)
       hono:
-        specifier: ^4.12.10
-        version: 4.12.10
+        specifier: ^4.12.11
+        version: 4.12.11
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -169,7 +169,7 @@ importers:
         version: 1.59.1
       '@tailwindcss/vite':
         specifier: ^4.2.2
-        version: 4.2.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.2.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       '@types/react':
         specifier: ^19.2.14
         version: 19.2.14
@@ -178,7 +178,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: ^6.0.1
-        version: 6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       artillery:
         specifier: ^2.0.30
         version: 2.0.30(@types/node@25.5.2)
@@ -189,17 +189,17 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vite:
-        specifier: ^8.0.3
-        version: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   packages/react-flight-router-example:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.12
-        version: 1.19.12(hono@4.12.10)
+        version: 1.19.12(hono@4.12.11)
       hono:
-        specifier: ^4.12.10
-        version: 4.12.10
+        specifier: ^4.12.11
+        version: 4.12.11
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -221,7 +221,7 @@ importers:
         version: 1.59.1
       '@tailwindcss/vite':
         specifier: ^4.2.2
-        version: 4.2.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.2.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       '@types/react':
         specifier: ^19.2.14
         version: 19.2.14
@@ -230,7 +230,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: ^6.0.1
-        version: 6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       tailwindcss:
         specifier: ^4.2.2
         version: 4.2.2
@@ -238,17 +238,17 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vite:
-        specifier: ^8.0.3
-        version: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   packages/react-flight-router-notes-example:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.12
-        version: 1.19.12(hono@4.12.10)
+        version: 1.19.12(hono@4.12.11)
       hono:
-        specifier: ^4.12.10
-        version: 4.12.10
+        specifier: ^4.12.11
+        version: 4.12.11
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -267,7 +267,7 @@ importers:
         version: 1.59.1
       '@tailwindcss/vite':
         specifier: ^4.2.2
-        version: 4.2.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 4.2.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       '@types/react':
         specifier: ^19.2.14
         version: 19.2.14
@@ -276,7 +276,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: ^6.0.1
-        version: 6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+        version: 6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       tailwindcss:
         specifier: ^4.2.2
         version: 4.2.2
@@ -284,8 +284,8 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2
       vite:
-        specifier: ^8.0.3
-        version: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   packages/shared-ui:
     dependencies:
@@ -327,48 +327,48 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-cloudwatch-logs@3.1023.0':
-    resolution: {integrity: sha512-5clC126rkWW7astqmJvKTcjptCzX3CZT5tjS7eZqAQMhkrdY4aB7dqayW4iG8ViJvfqvwApvAL3EO8el0Pu6Kw==}
+  '@aws-sdk/client-cloudwatch-logs@3.1024.0':
+    resolution: {integrity: sha512-Hy1Esp179aHytOoxmF2Bx+dqFqgIKjs8MEJ6k/U1HrUymm7ue3BcBMk4xPR0hbwsxasJdnvQg6/52Y8OJOgVXA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cloudwatch@3.1023.0':
-    resolution: {integrity: sha512-vMBCMfHYc07LSa8FCvReuUyyoknd/W6d8HW3Fq6PYnBAvItLZaSRWtxJf2vW+xACwMvFWSA0xKKsnwkc/kPGDw==}
+  '@aws-sdk/client-cloudwatch@3.1024.0':
+    resolution: {integrity: sha512-FoZuLd17+pMP8CwDGna1z08Pr6fLN1NWEcT7ufQdWhWcdBl99dAPPKs2ypMr5zTPNEUmchcKMUDp2VzNSTaOcQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cognito-identity@3.1023.0':
-    resolution: {integrity: sha512-i9jZvaU+wvFpx0I1BZrRFoliAcO1+L5Dj3acBZBewNaOmMI5hGJtI1fTXxIk0PvKX1FrYlfS63QIcMD/zcxtdQ==}
+  '@aws-sdk/client-cognito-identity@3.1024.0':
+    resolution: {integrity: sha512-PhbZl7TT+SBAsNxeC4vjRCqnkKYadRPKpsX4s0CtsVZz3QJ6UWBO7nBCHV5Pdv1f+YJD+UbCxGBj389vOPLmsw==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ec2@3.1023.0':
-    resolution: {integrity: sha512-wTe0f79pTbVLDc0p9q/TYdY3OIJtNlHwRj4Ukx6pIfmpbkXdyGTxceBWHaILhK7SDL26SIuANMHIWC5RY/2ApA==}
+  '@aws-sdk/client-ec2@3.1024.0':
+    resolution: {integrity: sha512-1LtP6bT4i/bdYHpVFCq680HVE5buSbuX5L3wPJsXplbz7qKM/KDQx3jZ2Po/B+TxBKpam//rhGdJDKrIUSu5pQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ecs@3.1023.0':
-    resolution: {integrity: sha512-+EYwDGPS21xyatq1xTXlmmyKKkfk7lhAc+QlMznKnuM5mytM4ZzFAgp93NrgIemOqqervH5sbNDrKwurG8NAFA==}
+  '@aws-sdk/client-ecs@3.1024.0':
+    resolution: {integrity: sha512-NZHTBrgJGvaiufT1HqLpjwd3s/0EDWk7Rbn18eFAeA89yxBTFXQHHf0rraEYtLq8yD33WI2wKY/7vxcw2yPXyw==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-iam@3.1023.0':
-    resolution: {integrity: sha512-wXiOFPXRfAyawRHQhicJlors1TOtiZofUxUkDR5nitHvm+WT3zGcSA3xXzQSf0NK5ROnHYb4a8UA13BjHD0K9g==}
+  '@aws-sdk/client-iam@3.1024.0':
+    resolution: {integrity: sha512-ZR6FSJZCQb+diQfTjNITbEv7XGp73j7xFJ6f6Pi0n+4gCWdlYQH/UYRsfv5V6igBF8R+28yQo4m1pKekRsW2rA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-lambda@3.1023.0':
-    resolution: {integrity: sha512-e5LimDDMR+s9/tvq7gUEdjIYzntqP82MWr3MovEjtr7T+04W0b+mBFXqfjsczliD0pj3p5ngmfP0e6feSCoz2Q==}
+  '@aws-sdk/client-lambda@3.1024.0':
+    resolution: {integrity: sha512-e44dhPmVzHfQtJ84KpMVIuTuyg4JGw77UVDWvuxe+SixAi8diuBQJen/1gA5Ulm1covHAlp/4nm0aCcXetTI5Q==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-s3@3.1023.0':
-    resolution: {integrity: sha512-IvNy49sdoCWd3fgHQxail3y0UQdfKj1Xk0VPu9HTwlog60o9Lmp5ykjZ2LlIuHEPaxq4Siih707GB/ulUWgetw==}
+  '@aws-sdk/client-s3@3.1024.0':
+    resolution: {integrity: sha512-8qdO5aLCzaf9l0RdrSBW1iIroRKP2QBqtZ6lkrtHKiaaH0B18xEn+lrEgiN/eCf3uRAYk4cqbnI2XcWzm+7dDQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-sqs@3.1023.0':
-    resolution: {integrity: sha512-FrV5IaIhH9nRbun5XD7HCjPqKAAHr7WU9xNkP6zp3/+9monkR9yk8zxNwNMm5Urc/xXMnwTZpNP3sU1suzUcYA==}
+  '@aws-sdk/client-sqs@3.1024.0':
+    resolution: {integrity: sha512-bcqE25ahTthygiJDqc23fBAOy73F8L6D+LPXIeZIIKZKjqnmVLIYmd4ZN+H9YH297dTbOhaGtDaP0WueNuNzzg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ssm@3.1023.0':
-    resolution: {integrity: sha512-c7mcGAGluBDFHLAdgEUsa3DcLeyzFtcv+9ami+O1MZndMhxlOrQJUMarFX9L0FcVENyfxBAttJGfX/07Ha58pA==}
+  '@aws-sdk/client-ssm@3.1024.0':
+    resolution: {integrity: sha512-EaP/ybMwj2JkNvWByGQCFRLoTyXYXxxyme+zNpDmYnVJNtkUjyF9Bl4Jm8HtYo7sNalgVxUH1py1ms50LdG7KQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-sts@3.1023.0':
-    resolution: {integrity: sha512-5ERoqfMPotFE1Co2HKfCxNrf5yd2oMn7DzRlFnTYk14FTetO8iqy3bfK9foUoqDgdIdYoEChwgguGJsmI8FRBQ==}
+  '@aws-sdk/client-sts@3.1024.0':
+    resolution: {integrity: sha512-LQYfWXsZ6ty68zSMMBGyoj9Lf2bEvVcI593nU5wepaHOTb0HCdOS5BUuQdSkjQ+MUxE3UKlLpCsmEnfEFyNGNQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/core@3.973.26':
@@ -415,8 +415,8 @@ packages:
     resolution: {integrity: sha512-d+6h0SD8GGERzKe27v5rOzNGKOl0D+l0bWJdqrxH8WSQzHzjsQFIAPgIeOTUwBHVsKKwtSxc91K/SWax6XgswQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-providers@3.1023.0':
-    resolution: {integrity: sha512-CXA8h7KKX4Kz7uhpVKAQq0xkm7AmbxSZmEWqpwK/yPMbYJRTC003qgyOXizK2Auv5Z+85F+Trm7404jzkCYhpA==}
+  '@aws-sdk/credential-providers@3.1024.0':
+    resolution: {integrity: sha512-5aVZ74iKJ3InT/s4H2tVzAjH48SdegJU0Y0RaAYToQbmrS1R17tipw0jVQrFzajX6W5sbG6xfLcTNIGL33ODMQ==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/middleware-bucket-endpoint@3.972.8':
@@ -1020,16 +1020,16 @@ packages:
   '@ngneat/falso@8.0.2':
     resolution: {integrity: sha512-vhPtuoHoxE5JGWPSPBqEyTXcjI4MAn8GllR+Vs8FfpAQu2sQRd4PJc3e8kc9vdbdhYHx1C9HmbECgtGLK30z4w==}
 
-  '@oclif/core@4.10.4':
-    resolution: {integrity: sha512-4aMd2BAhmGWjiASzJVmEAaPTZStxW0+VdylON5m+LwbxlG2HD7aTHZ7gWqeHBm/rXH5mi1WLb5LlQTCL+VdELQ==}
+  '@oclif/core@4.10.5':
+    resolution: {integrity: sha512-qcdCF7NrdWPfme6Kr34wwljRCXbCVpL1WVxiNy0Ep6vbWKjxAjFQwuhqkoyL0yjI+KdwtLcOCGn5z2yzdijc8w==}
     engines: {node: '>=18.0.0'}
 
-  '@oclif/plugin-help@6.2.41':
-    resolution: {integrity: sha512-oHqpm9a8NnLY9J5yIA+znchB2QCBqDUu5n7XINdZwfbhO6WOUZ2ANww6QN7crhvAKgpN5HK/ELN8Hy96kgLUuA==}
+  '@oclif/plugin-help@6.2.43':
+    resolution: {integrity: sha512-aef92VxQECLFDjI4CpgCL+jDuAsc3jzq5gBTLwNzj60mmrh8eDd7B0ABIgWXphb6gdARSRil+/FPtcdiSSupRA==}
     engines: {node: '>=18.0.0'}
 
-  '@oclif/plugin-not-found@3.2.78':
-    resolution: {integrity: sha512-wFg7rUYUxYsBMl0fEBHOJ+GAO0/3Nwpn4scmkqV3IQdch7+N1ke8qFOzLZal0kpa0wt+Tr/aJvaT8iYccPGZDQ==}
+  '@oclif/plugin-not-found@3.2.80':
+    resolution: {integrity: sha512-yTLjWvR1r/Rd/cO2LxHdMCDoL5sQhBYRUcOMCmxZtWVWhx4rAZ8KVUPDVsb+SvjJDV5ADTDBgt1H52fFx7YWqg==}
     engines: {node: '>=18.0.0'}
 
   '@opentelemetry/api-logs@0.205.0':
@@ -2521,8 +2521,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  baseline-browser-mapping@2.10.14:
-    resolution: {integrity: sha512-fOVLPAsFTsQfuCkvahZkzq6nf8KvGWanlYoTh0SVA0A/PIUxQGU2AOZAoD95n2gFLVDW/jP6sbGLny95nmEuHA==}
+  baseline-browser-mapping@2.10.15:
+    resolution: {integrity: sha512-1nfKCq9wuAZFTkA2ey/3OXXx7GzFjLdkTiFVNwlJ9WqdI706CZRIhEqjuwanjMIja+84jDLa9rcyZDPDiVkASQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -2586,8 +2586,8 @@ packages:
     resolution: {integrity: sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==}
     engines: {node: '>= 0.4'}
 
-  caniuse-lite@1.0.30001784:
-    resolution: {integrity: sha512-WU346nBTklUV9YfUl60fqRbU5ZqyXlqvo1SgigE1OAXK5bFL8LL9q1K7aap3N739l4BvNqnkm3YrGHiY9sfUQw==}
+  caniuse-lite@1.0.30001786:
+    resolution: {integrity: sha512-4oxTZEvqmLLrERwxO76yfKM7acZo310U+v4kqexI2TL1DkkUEMT8UijrxxcnVdxR3qkVf5awGRX+4Z6aPHVKrA==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -3175,8 +3175,8 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  fuse.js@7.2.0:
-    resolution: {integrity: sha512-zf4vdcIGpjNKTuXwug33Hm2okqX6a0t2ZEbez+o9oBJQSNhVJ5AqERfeiRD3r8HcLqP66MrjdkmzxrncbAOTUQ==}
+  fuse.js@7.3.0:
+    resolution: {integrity: sha512-plz8RVjfcDedTGfVngWH1jmJvBvAwi1v2jecfDerbEnMcmOYUEEwKFTHbNoCiYyzaK2Ws8lABkTCcRSqCY1q4w==}
     engines: {node: '>=10'}
 
   get-amd-module-type@6.0.1:
@@ -3292,8 +3292,8 @@ packages:
     resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
     engines: {node: '>=12.0.0'}
 
-  hono@4.12.10:
-    resolution: {integrity: sha512-mx/p18PLy5og9ufies2GOSUqep98Td9q4i/EF6X7yJgAiIopxqdfIO3jbqsi3jRgTgw88jMDEzVKi+V2EF+27w==}
+  hono@4.12.11:
+    resolution: {integrity: sha512-r4xbIa3mGGGoH9nN4A14DOg2wx7y2oQyJEb5O57C/xzETG/qx4c7CVDQ5WMeKHZ7ORk2W0hZ/sQKXTav3cmYBA==}
     engines: {node: '>=16.9.0'}
 
   hot-shots@10.2.1:
@@ -4611,14 +4611,14 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@8.0.3:
-    resolution: {integrity: sha512-B9ifbFudT1TFhfltfaIPgjo9Z3mDynBTJSUYxTjOQruf/zHH+ezCQKcoqO+h7a9Pw9Nm/OtlXAiGT1axBgwqrQ==}
+  vite@8.0.5:
+    resolution: {integrity: sha512-nmu43Qvq9UopTRfMx2jOYW5l16pb3iDC1JH6yMuPkpVbzK0k+L7dfsEDH4jRgYFmsg0sTAqkojoZgzLMlwHsCQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
       '@types/node': ^20.19.0 || >=22.12.0
       '@vitejs/devtools': ^0.1.0
-      esbuild: ^0.27.0
+      esbuild: ^0.27.0 || ^0.28.0
       jiti: '>=1.21.0'
       less: ^4.0.0
       sass: ^1.70.0
@@ -4936,7 +4936,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-cloudwatch-logs@3.1023.0':
+  '@aws-sdk/client-cloudwatch-logs@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -4983,7 +4983,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cloudwatch@3.1023.0':
+  '@aws-sdk/client-cloudwatch@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5029,7 +5029,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cognito-identity@3.1023.0':
+  '@aws-sdk/client-cognito-identity@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5073,7 +5073,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ec2@3.1023.0':
+  '@aws-sdk/client-ec2@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5119,7 +5119,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ecs@3.1023.0':
+  '@aws-sdk/client-ecs@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5164,7 +5164,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-iam@3.1023.0':
+  '@aws-sdk/client-iam@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5209,7 +5209,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-lambda@3.1023.0':
+  '@aws-sdk/client-lambda@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5258,7 +5258,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-s3@3.1023.0':
+  '@aws-sdk/client-s3@3.1024.0':
     dependencies:
       '@aws-crypto/sha1-browser': 5.2.0
       '@aws-crypto/sha256-browser': 5.2.0
@@ -5318,7 +5318,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-sqs@3.1023.0':
+  '@aws-sdk/client-sqs@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5364,7 +5364,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ssm@3.1023.0':
+  '@aws-sdk/client-ssm@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5409,7 +5409,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-sts@3.1023.0':
+  '@aws-sdk/client-sts@3.1024.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -5588,9 +5588,9 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-providers@3.1023.0':
+  '@aws-sdk/credential-providers@3.1024.0':
     dependencies:
-      '@aws-sdk/client-cognito-identity': 3.1023.0
+      '@aws-sdk/client-cognito-identity': 3.1024.0
       '@aws-sdk/core': 3.973.26
       '@aws-sdk/credential-provider-cognito-identity': 3.972.21
       '@aws-sdk/credential-provider-env': 3.972.24
@@ -6180,9 +6180,9 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hono/node-server@1.19.12(hono@4.12.10)':
+  '@hono/node-server@1.19.12(hono@4.12.11)':
     dependencies:
-      hono: 4.12.10
+      hono: 4.12.11
 
   '@inquirer/ansi@1.0.2': {}
 
@@ -6401,7 +6401,7 @@ snapshots:
       seedrandom: 3.0.5
       uuid: 8.3.2
 
-  '@oclif/core@4.10.4':
+  '@oclif/core@4.10.5':
     dependencies:
       ansi-escapes: 4.3.2
       ansis: 3.17.0
@@ -6422,14 +6422,14 @@ snapshots:
       wordwrap: 1.0.0
       wrap-ansi: 7.0.0
 
-  '@oclif/plugin-help@6.2.41':
+  '@oclif/plugin-help@6.2.43':
     dependencies:
-      '@oclif/core': 4.10.4
+      '@oclif/core': 4.10.5
 
-  '@oclif/plugin-not-found@3.2.78(@types/node@25.5.2)':
+  '@oclif/plugin-not-found@3.2.80(@types/node@25.5.2)':
     dependencies:
       '@inquirer/prompts': 7.10.1(@types/node@25.5.2)
-      '@oclif/core': 4.10.4
+      '@oclif/core': 4.10.5
       ansis: 3.17.0
       fast-levenshtein: 3.0.0
     transitivePeerDependencies:
@@ -7430,12 +7430,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.2.2
       '@tailwindcss/oxide-win32-x64-msvc': 4.2.2
 
-  '@tailwindcss/vite@4.2.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
+  '@tailwindcss/vite@4.2.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       '@tailwindcss/node': 4.2.2
       '@tailwindcss/oxide': 4.2.2
       tailwindcss: 4.2.2
-      vite: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   '@testing-library/dom@10.4.1':
     dependencies:
@@ -7600,10 +7600,10 @@ snapshots:
     dependencies:
       uncrypto: 0.1.3
 
-  '@vitejs/plugin-react@6.0.1(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
+  '@vitejs/plugin-react@6.0.1(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-rc.7
-      vite: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   '@vitest/expect@4.1.2':
     dependencies:
@@ -7614,13 +7614,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
+  '@vitest/mocker@4.1.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       '@vitest/spy': 4.1.2
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
 
   '@vitest/pretty-format@4.1.2':
     dependencies:
@@ -7888,7 +7888,7 @@ snapshots:
 
   artillery-plugin-publish-metrics@2.35.0:
     dependencies:
-      '@aws-sdk/client-cloudwatch': 3.1023.0
+      '@aws-sdk/client-cloudwatch': 3.1024.0
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/context-async-hooks': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/exporter-metrics-otlp-grpc': 0.41.2(@opentelemetry/api@1.9.1)
@@ -7928,23 +7928,23 @@ snapshots:
     dependencies:
       '@artilleryio/int-commons': 2.21.0
       '@artilleryio/int-core': 2.25.0
-      '@aws-sdk/client-cloudwatch-logs': 3.1023.0
-      '@aws-sdk/client-ec2': 3.1023.0
-      '@aws-sdk/client-ecs': 3.1023.0
-      '@aws-sdk/client-iam': 3.1023.0
-      '@aws-sdk/client-lambda': 3.1023.0
-      '@aws-sdk/client-s3': 3.1023.0
-      '@aws-sdk/client-sqs': 3.1023.0
-      '@aws-sdk/client-ssm': 3.1023.0
-      '@aws-sdk/client-sts': 3.1023.0
-      '@aws-sdk/credential-providers': 3.1023.0
+      '@aws-sdk/client-cloudwatch-logs': 3.1024.0
+      '@aws-sdk/client-ec2': 3.1024.0
+      '@aws-sdk/client-ecs': 3.1024.0
+      '@aws-sdk/client-iam': 3.1024.0
+      '@aws-sdk/client-lambda': 3.1024.0
+      '@aws-sdk/client-s3': 3.1024.0
+      '@aws-sdk/client-sqs': 3.1024.0
+      '@aws-sdk/client-ssm': 3.1024.0
+      '@aws-sdk/client-sts': 3.1024.0
+      '@aws-sdk/credential-providers': 3.1024.0
       '@azure/arm-containerinstance': 9.1.0
       '@azure/identity': 4.13.1
       '@azure/storage-blob': 12.31.0
       '@azure/storage-queue': 12.29.0
-      '@oclif/core': 4.10.4
-      '@oclif/plugin-help': 6.2.41
-      '@oclif/plugin-not-found': 3.2.78(@types/node@25.5.2)
+      '@oclif/core': 4.10.5
+      '@oclif/plugin-help': 6.2.43
+      '@oclif/plugin-not-found': 3.2.80(@types/node@25.5.2)
       '@upstash/redis': 1.37.0
       artillery-engine-playwright: 1.27.0
       artillery-plugin-apdex: 1.21.0
@@ -7978,7 +7978,7 @@ snapshots:
       nanoid: 3.3.11
       ora: 4.1.1
       rc: 1.2.8
-      sqs-consumer: 6.0.2(@aws-sdk/client-sqs@3.1023.0)
+      sqs-consumer: 6.0.2(@aws-sdk/client-sqs@3.1024.0)
       tempy: 3.1.0
       walk-sync: 0.2.7
       yaml-js: 0.3.1
@@ -8010,7 +8010,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  baseline-browser-mapping@2.10.14: {}
+  baseline-browser-mapping@2.10.15: {}
 
   bignumber.js@9.3.1: {}
 
@@ -8046,8 +8046,8 @@ snapshots:
 
   browserslist@4.28.2:
     dependencies:
-      baseline-browser-mapping: 2.10.14
-      caniuse-lite: 1.0.30001784
+      baseline-browser-mapping: 2.10.15
+      caniuse-lite: 1.0.30001786
       electron-to-chromium: 1.5.331
       node-releases: 2.0.37
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
@@ -8077,7 +8077,7 @@ snapshots:
       es-errors: 1.3.0
       function-bind: 1.1.2
 
-  caniuse-lite@1.0.30001784: {}
+  caniuse-lite@1.0.30001786: {}
 
   ccount@2.0.1: {}
 
@@ -8713,7 +8713,7 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  fuse.js@7.2.0: {}
+  fuse.js@7.3.0: {}
 
   get-amd-module-type@6.0.1:
     dependencies:
@@ -8883,7 +8883,7 @@ snapshots:
 
   highlight.js@11.11.1: {}
 
-  hono@4.12.10: {}
+  hono@4.12.11: {}
 
   hot-shots@10.2.1:
     optionalDependencies:
@@ -10316,9 +10316,9 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sqs-consumer@6.0.2(@aws-sdk/client-sqs@3.1023.0):
+  sqs-consumer@6.0.2(@aws-sdk/client-sqs@3.1024.0):
     dependencies:
-      '@aws-sdk/client-sqs': 3.1023.0
+      '@aws-sdk/client-sqs': 3.1024.0
       debug: 4.4.3(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
@@ -10587,7 +10587,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3):
+  vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -10606,10 +10606,10 @@ snapshots:
       - '@emnapi/core'
       - '@emnapi/runtime'
 
-  vitest@4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)):
+  vitest@4.1.2(@opentelemetry/api@1.9.1)(@types/node@25.5.2)(happy-dom@20.8.9)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)):
     dependencies:
       '@vitest/expect': 4.1.2
-      '@vitest/mocker': 4.1.2(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
+      '@vitest/mocker': 4.1.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3))
       '@vitest/pretty-format': 4.1.2
       '@vitest/runner': 4.1.2
       '@vitest/snapshot': 4.1.2
@@ -10626,7 +10626,7 @@ snapshots:
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
-      vite: 8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.2)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.3)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
