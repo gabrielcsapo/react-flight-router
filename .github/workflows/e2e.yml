@@ -219,6 +219,9 @@ jobs:
       - name: Build library
         run: pnpm build:lib
 
+      - name: Re-link bins after library build
+        run: pnpm install
+
       - name: Start dev server
         run: pnpm dev > /tmp/dev-server.log 2>&1 &
 
